@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <title>ejercicioTipoExamen</title>
+</head>
+<body>
+
+        <header>
+            <img src="/img/logoZara.svg" alt="ZARA">
+            
+            <nav>
+                <h1><b>Rebajas</b></h1>
+                <a href="#">Nuevo Producto</a>
+                <a href="#">Modificar Producto</a>
+                <a href="#">Eliminar Producto</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="media">
+                <video autoplay loop muted>
+                    <source src="/img/vertical.mp4" type="video/mp4">
+                    <source src="/img/vertical.webm" type="video/webm">
+                </video>
+            </section>
+
+            <section class="formulario">
+
+                <form action="/src/altacorrecta.html" method="post">
+                    <fieldset>
+                        <legend>Nuevo Producto</legend>
+                        <label>Categoría</label>
+                        <select required>
+                            <option value="">Seleccione</option>
+                            <option value="Vestido">Vestido/Mono</option>
+                            <option value="blz">Blazer</option>
+                            <option value="abr">Abrigo</option>
+                            <option value="pant">Pantalón</option>
+                            <option value="fld">Falda</option>
+                        </select>
+
+                        <label for="codigo">Código Producto</label>
+                        <input type="text" id="codigo" name="codigo"
+                            required
+                            pattern="[A-Za-z]{3}[0-9]{5}([\-:][b-tB-T])?"
+                            placeholder="Ej: wAr45678-m">
+
+
+                        <label>Nombre</label>
+                        <input type="text" maxlength="15">
+
+                        <label>Estilo</label>
+                        <input list="estilos" required>
+                        <datalist id="estilos">
+                            <option value="casual">
+                            <option value="sporty">
+                            <option value="clásico">
+                            <option value="boho">
+                        </datalist>
+
+                        <label>Precio</label>
+                        <input type="number"
+                            required
+                            step="0.01"
+                            max="999.99">
+
+                        <label>Color</label>
+                        <input type="color" name="color" id="color">
+
+                        <label>Foto</label>
+                        <input type="file" required>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="media">
+                <video autoplay loop muted>
+                    <source src="/img/modelo.mp4" type="video/mp4">
+                </video>
+            </section>
+        </main>
+
+        <footer>
+            <p>Pongase en contacto con nosotros en la dirección atencionTienda@inditex.es</p>
+        </footer>
+
+</body>
+</html>

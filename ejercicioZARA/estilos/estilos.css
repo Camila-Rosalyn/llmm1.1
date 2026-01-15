@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: stretch;
+}
+
+header img {
+    width: 280px;
+    padding: 20px;
+}
+
+/* NAV (FRANJA AMARILLA) */
+nav {
+    flex: 1;
+    background-color: #f0e600;
+    text-align: center;
+    padding: 30px 0;
+}
+
+nav h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: 1fr 420px 1fr;
+    align-items: center;
+    padding: 60px 80px;
+    column-gap: 60px;
+}
+
+/* IMÁGENES / VÍDEOS */
+.media video {
+    width: 100%;
+    max-width: 320px;
+}
+
+/* FORMULARIO */
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    width: 100%;
+    border: 1px solid #aaa;
+    padding: 25px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+input,
+select {
+    margin-top: 5px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 6px 12px;
+    width: fit-content;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
